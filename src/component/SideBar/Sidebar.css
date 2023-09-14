@@ -1,0 +1,27 @@
+.sidebar-container{
+    top: 0;
+    left: 0;
+    width: 12rem;
+    position: fixed;
+    border-right: 1px solid var(--black);
+    min-height: 100vh;
+    padding-top: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    background-color: var( --bg-color);
+    z-index: 1;
+}
+@media screen and (max-width:750px) {
+    .sidebar-container{
+        width: 10rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .sidebar-container{
+        left: -110%;
+        width: 11rem;
+    }
+    .sidebar-container.active{
+        left: 0%;
+    }
+}

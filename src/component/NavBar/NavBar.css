@@ -1,0 +1,103 @@
+nav{
+    display: flex;
+    margin: 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: var(--bg-color);
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--black);
+}
+.input{
+    display: flex;
+    margin-left: 5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.link-container{
+    margin-right: 5rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: .5rem;
+}
+.link{
+    color: var(--black);
+    font-size: 2rem;
+}
+.cartt{
+    margin-top: -.8rem;
+}
+.cart-num{
+    width: .8rem;
+    height: .8rem;
+    font-size: .7rem;
+    text-align: center;
+    margin-left: 1rem;
+    top: .5rem;
+    border-radius: 50%;
+    background-color: orange;
+}
+@media screen and (max-width:900px) {
+    .link-container{
+        gap: 2rem;
+        margin-right: 1rem;
+    }
+    .input{
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width:750px) {
+    .input{
+        margin-left: 0rem;
+    }
+    .link-container{
+        gap: 2rem;
+        margin-right: 0rem;
+    }  
+    .Faminta{
+        margin-left: 0rem;
+    } 
+}
+@media screen and (max-width:500px) {
+    .input{
+        padding: 1rem 1rem;
+    }
+    .link{
+        font-size: 2rem;
+    }
+    nav{
+        padding: .5rem;
+    }
+    .cart-num{
+        margin-left: .6rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .input{
+        padding:0rem;
+        padding-left: .5rem;
+        width: 9rem;
+        border-radius: 5px;
+    }
+    .input::placeholder{
+        font-size: .9rem;
+    }
+    .Faminta{
+        font-size: 1rem;
+    }
+    .link-container{
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:350px) {
+    .input{
+        width: 9rem;
+    }
+    .input::placeholder{
+        font-size: .9rem;
+    }
+}

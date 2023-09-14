@@ -1,0 +1,16 @@
+.reco{
+    margin-top: 0rem;
+}
+.recommended-container{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+}
+.recommended{
+   width: 5rem;
+   padding: .5rem;
+   background-color: white;
+   border-radius: 6px;
+   cursor: pointer;
+}
